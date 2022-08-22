@@ -1,0 +1,326 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:22:41.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.62
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 31 2022 14:34:15 UTC
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.62.0
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-27-generic
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/adriel/.sdkman/candidates/java/11.0.15.9.1-amzn
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.15+9-LTS
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:22:41.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:22:41.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-May-2022 15:22:41.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adriel/Documents/apache-tomcat-9.0.62/conf/logging.properties
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:22:41.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adriel/Documents/apache-tomcat-9.0.62/temp
+14-May-2022 15:22:41.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+14-May-2022 15:22:41.704 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-May-2022 15:22:41.716 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+14-May-2022 15:22:41.717 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [373] milliseconds
+14-May-2022 15:22:41.753 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-May-2022 15:22:41.754 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.62]
+14-May-2022 15:22:41.765 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war]
+14-May-2022 15:22:42.022 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war] has finished in [257] ms
+14-May-2022 15:22:42.023 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager]
+14-May-2022 15:22:42.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager] has finished in [17] ms
+14-May-2022 15:22:42.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples]
+14-May-2022 15:22:42.126 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples] has finished in [85] ms
+14-May-2022 15:22:42.126 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager]
+14-May-2022 15:22:42.139 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager] has finished in [13] ms
+14-May-2022 15:22:42.139 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT]
+14-May-2022 15:22:42.148 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT] has finished in [9] ms
+14-May-2022 15:22:42.148 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs]
+14-May-2022 15:22:42.157 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs] has finished in [9] ms
+14-May-2022 15:22:42.160 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [442] milliseconds
+14-May-2022 15:22:42.163 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+14-May-2022 15:22:42.164 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-May-2022 15:22:42.164 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-May-2022 15:22:42.177 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-May-2022 15:22:42.177 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:23:20.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.62
+14-May-2022 15:23:20.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 31 2022 14:34:15 UTC
+14-May-2022 15:23:20.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.62.0
+14-May-2022 15:23:20.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-May-2022 15:23:20.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-27-generic
+14-May-2022 15:23:20.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-May-2022 15:23:20.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/adriel/.sdkman/candidates/java/11.0.15.9.1-amzn
+14-May-2022 15:23:20.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.15+9-LTS
+14-May-2022 15:23:20.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+14-May-2022 15:23:20.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:23:20.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adriel/Documents/apache-tomcat-9.0.62/conf/logging.properties
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-May-2022 15:23:20.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-May-2022 15:23:20.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-May-2022 15:23:20.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-May-2022 15:23:20.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:23:20.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:23:20.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adriel/Documents/apache-tomcat-9.0.62/temp
+14-May-2022 15:23:20.502 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+14-May-2022 15:23:20.692 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-May-2022 15:23:20.708 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [328] milliseconds
+14-May-2022 15:23:20.738 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-May-2022 15:23:20.738 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.62]
+14-May-2022 15:23:20.747 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war]
+14-May-2022 15:23:20.993 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war] has finished in [245] ms
+14-May-2022 15:23:20.993 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager]
+14-May-2022 15:23:21.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager] has finished in [18] ms
+14-May-2022 15:23:21.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples]
+14-May-2022 15:23:21.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples] has finished in [83] ms
+14-May-2022 15:23:21.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager]
+14-May-2022 15:23:21.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager] has finished in [11] ms
+14-May-2022 15:23:21.106 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT]
+14-May-2022 15:23:21.114 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT] has finished in [8] ms
+14-May-2022 15:23:21.114 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs]
+14-May-2022 15:23:21.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs] has finished in [9] ms
+14-May-2022 15:23:21.126 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-May-2022 15:23:21.133 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [424] milliseconds
+Cadastrando nova empresa
+Empresa removida com sucesso!
+Empresa editada com sucesso!
+Empresa editada com sucesso!
+Empresa removida com sucesso!
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:27:37.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.62
+14-May-2022 15:27:37.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 31 2022 14:34:15 UTC
+14-May-2022 15:27:37.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.62.0
+14-May-2022 15:27:37.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-May-2022 15:27:37.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-27-generic
+14-May-2022 15:27:37.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-May-2022 15:27:37.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/adriel/.sdkman/candidates/java/11.0.15.9.1-amzn
+14-May-2022 15:27:37.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.15+9-LTS
+14-May-2022 15:27:37.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+14-May-2022 15:27:37.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:27:37.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:27:37.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-May-2022 15:27:37.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-May-2022 15:27:37.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-May-2022 15:27:37.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-May-2022 15:27:37.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:27:37.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adriel/Documents/apache-tomcat-9.0.62/conf/logging.properties
+14-May-2022 15:27:37.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-May-2022 15:27:37.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-May-2022 15:27:37.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-May-2022 15:27:37.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-May-2022 15:27:37.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-May-2022 15:27:37.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:27:37.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:27:37.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adriel/Documents/apache-tomcat-9.0.62/temp
+14-May-2022 15:27:37.422 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+14-May-2022 15:27:37.606 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+14-May-2022 15:27:37.615 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-80]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.SocketException: Permission denied
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+14-May-2022 15:27:37.616 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [317] milliseconds
+14-May-2022 15:27:37.647 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-May-2022 15:27:37.647 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.62]
+14-May-2022 15:27:37.656 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war]
+14-May-2022 15:27:37.885 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war] has finished in [229] ms
+14-May-2022 15:27:37.886 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager]
+14-May-2022 15:27:37.903 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager] has finished in [16] ms
+14-May-2022 15:27:37.903 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples]
+14-May-2022 15:27:37.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples] has finished in [80] ms
+14-May-2022 15:27:37.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager]
+14-May-2022 15:27:37.994 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager] has finished in [11] ms
+14-May-2022 15:27:37.994 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT]
+14-May-2022 15:27:38.002 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT] has finished in [8] ms
+14-May-2022 15:27:38.002 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs]
+14-May-2022 15:27:38.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs] has finished in [8] ms
+14-May-2022 15:27:38.014 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [397] milliseconds
+14-May-2022 15:27:38.015 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+14-May-2022 15:27:38.016 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+14-May-2022 15:27:38.016 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-May-2022 15:27:38.028 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+14-May-2022 15:27:38.029 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:28:46.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.62
+14-May-2022 15:28:46.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 31 2022 14:34:15 UTC
+14-May-2022 15:28:46.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.62.0
+14-May-2022 15:28:46.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-May-2022 15:28:46.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-27-generic
+14-May-2022 15:28:46.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-May-2022 15:28:46.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/adriel/.sdkman/candidates/java/11.0.15.9.1-amzn
+14-May-2022 15:28:46.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.15+9-LTS
+14-May-2022 15:28:46.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+14-May-2022 15:28:46.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:28:46.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:28:46.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-May-2022 15:28:46.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-May-2022 15:28:46.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-May-2022 15:28:46.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adriel/Documents/apache-tomcat-9.0.62/conf/logging.properties
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adriel/Documents/apache-tomcat-9.0.62
+14-May-2022 15:28:46.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adriel/Documents/apache-tomcat-9.0.62/temp
+14-May-2022 15:28:46.293 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+14-May-2022 15:28:46.478 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+14-May-2022 15:28:46.487 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-80]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.SocketException: Permission denied
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+14-May-2022 15:28:46.488 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [317] milliseconds
+14-May-2022 15:28:46.519 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-May-2022 15:28:46.519 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.62]
+14-May-2022 15:28:46.528 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war]
+14-May-2022 15:28:46.774 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/gerenciador.war] has finished in [246] ms
+14-May-2022 15:28:46.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager]
+14-May-2022 15:28:46.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/host-manager] has finished in [17] ms
+14-May-2022 15:28:46.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples]
+14-May-2022 15:28:46.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/examples] has finished in [84] ms
+14-May-2022 15:28:46.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager]
+14-May-2022 15:28:46.886 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/manager] has finished in [11] ms
+14-May-2022 15:28:46.886 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT]
+14-May-2022 15:28:46.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/ROOT] has finished in [8] ms
+14-May-2022 15:28:46.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs]
+14-May-2022 15:28:46.903 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adriel/Documents/apache-tomcat-9.0.62/webapps/docs] has finished in [8] ms
+14-May-2022 15:28:46.906 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [418] milliseconds
+14-May-2022 15:28:46.908 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+14-May-2022 15:28:46.909 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+14-May-2022 15:28:46.909 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-May-2022 15:28:46.921 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+14-May-2022 15:28:46.922 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
